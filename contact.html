@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Football Kits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Support & Custom Orders</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="validation.html">Register</a></li>
+                <li><a href="data.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Need a specific retro kit?</h2>
+        <p>Drop your details below and our sourcing team will track down that elusive jersey for your collection.</p>
+
+        <form action="#" method="post">
+            <div>
+                <label for="name">Player/Manager Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                    autocomplete="name">
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required
+                    autocomplete="email">
+            </div>
+
+            <fieldset>
+                <legend>Kit Type Required:</legend>
+                <input type="radio" id="home" name="kit_type" value="home" checked>
+                <label for="home">Home</label>
+
+                <input type="radio" id="away" name="kit_type" value="away">
+                <label for="away">Away / Third</label>
+
+                <input type="radio" id="gk" name="kit_type" value="gk">
+                <label for="gk">Goalkeeper</label>
+            </fieldset>
+
+            <div>
+                <label for="subject">Inquiry Type:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Select --</option>
+                    <option value="custom">Custom Print (Name/Number)</option>
+                    <option value="sourcing">Retro Sourcing</option>
+                    <option value="order_issue">Order Issue / Returns</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Details (Club, Year, Size):</label>
+                <textarea id="message" name="message" rows="5"
+                    placeholder="e.g., Looking for the Egypt 2008 AFCON kit in size L..." required></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Send Request</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Football Kits. Built for the culture.</p>
+    </footer>
+</body>
+
+</html>

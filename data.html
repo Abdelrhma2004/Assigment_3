@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory - Football Kits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Football Kits</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="validation.html">Register</a></li>
+                <li><a href="data.html" style="color: var(--primary);">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Community & Collector Directory</h2>
+        <p>Explore active members and collectors worldwide.</p>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+            <input type="text" id="searchBox" placeholder="Search by name or city..."
+                style="flex: 1; min-width: 200px;">
+            <button id="sortNameBtn" class="modal-btn" style="padding: 10px 15px; border: none; cursor: pointer;">Sort
+                by Name</button>
+            <button id="sortAgeBtn" class="modal-btn" style="padding: 10px 15px; border: none; cursor: pointer;">Sort by
+                Age</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Populated via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Football Kits. Built for the culture.</p>
+    </footer>
+
+    <script src="table.js"></script>
+</body>
+
+</html>

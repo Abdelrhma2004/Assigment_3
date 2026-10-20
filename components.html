@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components - Football Kits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Design System & Components</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="validation.html">Register</a></li>
+                <li><a href="data.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="alert" role="alert">
+            💡 <strong>Component Library:</strong> This page serves as our single source of truth for UI elements.
+        </div>
+
+        <section style="margin-bottom: 40px;">
+            <h2>1. CSS-Only Modal</h2>
+            <p>No JavaScript overhead. Pure CSS state management.</p>
+            <input type="checkbox" id="demo-modal" class="modal-toggle">
+            <label for="demo-modal" class="modal-btn">Open Size Guide Modal</label>
+
+            <div class="modal-overlay">
+                <div class="modal-content">
+                    <label for="demo-modal" class="modal-close" aria-label="Close modal">&times;</label>
+                    <h3>Jersey Size Guide</h3>
+                    <p>Our retro fit tends to run slightly tight. If you're wearing it to a live match or for a casual
+                        kickabout, we recommend sizing up for maximum comfort.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Form Elements (A11y Compliant)</h2>
+            <form action="#" onsubmit="event.preventDefault();">
+                <fieldset>
+                    <legend>Newsletter Preference</legend>
+                    <input type="radio" id="prem" name="league" value="premier" checked>
+                    <label for="prem">Premier League Updates</label>
+
+                    <input type="radio" id="seriea" name="league" value="seriea">
+                    <label for="seriea">Serie A Drops</label>
+                </fieldset>
+
+                <div style="margin-top: 15px;">
+                    <label for="team-select">Favorite Team (for tailored deals):</label>
+                    <select id="team-select" name="team">
+                        <option value="">Select a club...</option>
+                        <option value="liv">Liverpool</option>
+                        <option value="ars">Arsenal</option>
+                        <option value="int">Inter Milan</option>
+                        <option value="cry">Crystal Palace</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="modal-btn" style="width: 100%; margin-top: 10px;">Test Button
+                    State</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Football Kits. Built for the culture.</p>
+    </footer>
+</body>
+
+</html>
